@@ -43,7 +43,7 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
             qp = QPainter()
             qp.begin(self)
             self.draw_yellow_circles(qp)
-
+            qp.end()
 
     def draw_yellow_circles(self, qp):
         qp.setBrush(QColor(255, 255, 0))
