@@ -46,10 +46,10 @@ class Ui_MainWindow(QtWidgets.QMainWindow):
             qp.end()
 
     def draw_yellow_circles(self, qp):
-        qp.setBrush(QColor(255, 255, 0))
         x = 100
         y = 30
         for i in range(7):
+            qp.setBrush(QColor(random.randint(0, 255), random.randint(0, 255), random.randint(0, 255)))
             d = random.randint(1, 70)
             qp.drawEllipse(x, y, d, d)
             x += 80
